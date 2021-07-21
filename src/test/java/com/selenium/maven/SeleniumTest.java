@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class SeleniumTest {
 
-	@Test
+	@Test(dependsOnMethods= {"elementsUI"})
 	public void browserAutomation() {
 		System.out.println("Browser Automation!");
 	}
